@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    height: 100%auto;
+    margin: 50;
+    background-image: url("9E347E71-115B-4730-9A82-68880152FABC.png");
+    background-size: cover;
+    
+   
+      
+   
+    text-align: center;
+    color: #fff;
+  }
+  h1 {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 3em;
+      
+      
+      
+  }
+  
+
+  
+  #quiz {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      width: 800px;
+      margin: auto;
+      position: relative;
+  }
+  #questions {
+      font-size: 1.6em;
+      position: relative;
+  }
+  #answers {
+      list-style-type: none;
+      margin: 25px 0 0 0;
+      padding: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: 77.5px;
+      font-size: 1em;
+      position: relative;
+  }
+  
+  #answers li {
+      float: left;
+      right: 30;
+      margin: 0px 15px 15px 0px;
+      width: 200px;
+      height: 60px;
+      position: relative;
+  }
+  #answers label, #answers input {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  #answers input[type="radio"] {
+      opacity: 0.011;
+      z-index: 100;
+  }
+  #answers input[type="radio"]:checked + label {
+      opacity: 1;
+  }
+  #answers label {
+      padding: 5px;
+      border: 2px solid #000000;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0.7;
+      
+      transition: opacity 0.2s linear;
+      
+  }
+  #answers label:hover {
+      opacity: 1;
+  }
+  .button {
+      border: 2px solid #fff;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: transparent;
+      text-transform: uppercase;
+      padding: 10px;
+      color: #fff;
+      position: relative;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+  #results {
+      display: none;
+  }
+  #error {
+      display: none;	
+      }
+.modal {
+    display: none;
+    position: absolute; /* กำหนดตำแหน่งเป็น absolute เพื่อให้ modal แสดงบน #quiz */
+    top: 50%; /* กำหนดให้อยู่ตรงกลางของ #quiz */
+    left: 50%; /* กำหนดให้อยู่ตรงกลางของ #quiz */
+    transform: translate(-50%, -50%); /* ปรับแต่งให้อยู่ตรงกลางของ #quiz */
+    width: 300px;
+    height: 750px;
+    padding: 1rem 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(174, 167, 167, 0.4);
+    border-radius: 0.25rem;
+    }
